@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<header> 
+    <img class="header-img" src="https://images.vexels.com/content/230871/preview/watermelon-slice-gradient-685804.png" "a"/>
+    <a class="header-title">WatermelonEnterprise</a>
+
+    <ul class="header-links">
+        <li class="header-elem"> 
+            <a href="formulario.html" class="header-icon">Formulario</a>
+        </li>
+        <li class="header-elem">
+            <a href="video.html" class="header-icon">Video</a>
+        </li>
+        <li class="header-elem">  
+            <a href="recetas.html" class="header-icon">Recetas</a>
+            <ul class="dropdown">
+                <li class="mini-elem"><a href="recetas.html#receta1" class="mini-icon">Receta 1</a></li>
+                <li class="mini-elem"><a href="recetas.html#receta2" class="mini-icon">Receta 2</a></li>
+                <li class="mini-elem"><a href="recetas.html#receta3" class="mini-icon">Receta 3</a></li>
+                <li class="mini-elem"><a href="recetas.html#receta4" class="mini-icon">Receta 4</a></li>
+            </ul>
+        </li>
+        <li class="header-elem">
+            <a href="contacto.html" class="header-icon">Contacto</a>
+        </li>
+    </ul>
+    
+</header>
+
+<body onclick="PlayAudio()">
+
+    
+    <audio id="audio1" autoplay loop>
+        <source src="media/musica.mp3" type="audio/mp3">
+    </audio>
+
+    <main id="main">
+        <video muted autoplay loop>
+            <source src="media/fondo.mp4"
+            type="video/mp4">
+        </video>
+        <div class="capa"></div>
+        <div class=""container>
+            <section id="receta1">
+                <img src="https://www.lacocinasana.com/static/b0a03b6ec0e46f01647727b1a99c7fc3/cad01/sandiaapertura_c655d0bbef.jpg" class="section-img">
+                <div class="text-box">
+                    <h2 class="section-title">Tarta de sandia</h2>
+                    <p class="section-text">Para preparar una tarta de sandía, corta rodajas de sandía sin semillas y quítales la piel. Tuesta almendras laminadas y sumerge cada rodaja de sandía en yogur de vainilla, rebozándolas luego con las almendras tostadas. Decora con más yogur, fresas y arándanos, y añade un chorrito de sirope de chocolate. Sirve fría y disfruta de este refrescante postre.</p>
+                </div>
+            </section>
+
+            <section id="receta2">
+                <img src="https://www.recetasnestle.com.do/sites/default/files/srh_recipes/a1830c3ae0ad8f1daad680c6f6d70e27.png" class="section-img">
+                <div class="text-box">
+                    <h2 class="section-title">Helados de sandia</h2>
+                    <p class="section-text">Para hacer helados de sandía y kiwi, tritura la pulpa de ½ sandía sin pepitas y llena 2/3 de moldes para helados. Congela durante al menos dos horas. Luego, añade un yogur natural griego (puedes endulzarlo si lo deseas) y congela de nuevo. Finalmente, tritura 2 kiwis y añádelos al molde, congelando nuevamente hasta que estén listos.</p>
+                </div>
+            </section>
+
+            <section id="receta3">
+                <img src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP197R-h-o.png" class="section-img">
+                <div class="text-box">
+                    <h2 class="section-title">Granizados de sandia</h2>
+                    <p class="section-text">Para hacer un granizado de sandía, corta ½ sandía sin semillas y licúa con ¼ de taza de azúcar y el jugo de medio limón. Agrega hielo picado y licúa hasta obtener una textura granulada. Sirve en vasos altos, decorando con rodajas de limón o lima y hojas de menta. También puedes usar sandía congelada en lugar de hielo.</p>
+                </div>
+            </section>
+            <section id="receta4">
+                <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2020/05/29/sandia-a-la-plancha-con-chocolate-fundido.jpeg" class="section-img">
+                <div class="text-box">
+                    <h2 class="section-title">Sandia a la plancha con chocolate</h2>
+                    <p class="section-text">Para preparar sandía a la plancha, corta una sandía en trozos gruesos y caliéntalos en una plancha durante unos minutos, dándoles la vuelta para que se cocinen uniformemente. Sirve en un plato y riega con chocolate caliente, decorando con hojas de menta fresca. Esta receta es ideal como postre para niños o para sorprender a visitas inesperadas.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <script>
+        function PlayAudio() {
+            document.getElementById("audio1").play();
+        }
+    </script>
+</body>
+
+<footer class="footer">
+    <ul class="menu-footer">
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Inicio </a>   
+        </li>  
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Equipo </a>   
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Contacto </a>   
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Video </a>   
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Sobre Nosotros </a>   
+        </li>
+    </ul>
+    <p class="text"> 2024 | Todos los derechos reservados</p>
+</footer>
+</html>

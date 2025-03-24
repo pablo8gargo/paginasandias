@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+
+<header> 
+    <img class="header-img" src="https://images.vexels.com/content/230871/preview/watermelon-slice-gradient-685804.png" "a"/>
+    <a class="header-title">WatermelonEnterprise</a>
+
+    <ul class="header-links">
+        <li class="header-elem"> 
+            <a href="formulario.html" class="header-icon">Formulario</a>
+        </li>
+        <li class="header-elem">
+            <a href="video.html" class="header-icon">Video</a>
+        </li>
+        <li class="header-elem">  
+            <a href="recetas.html" class="header-icon">Recetas</a>
+            <ul class="dropdown">
+                <li class="mini-elem"><a href="recetas.html#receta1" class="mini-icon">Receta 1</a></li>
+                <li class="mini-elem"><a href="recetas.html#receta2" class="mini-icon">Receta 2</a></li>
+                <li class="mini-elem"><a href="recetas.html#receta3" class="mini-icon">Receta 3</a></li>
+                <li class="mini-elem"><a href="recetas.html#receta4" class="mini-icon">Receta 4</a></li>
+            </ul>
+        </li>
+        <li class="header-elem">
+            <a href="contacto.html" class="header-icon">Contacto</a>
+        </li>
+    </ul>
+    
+</header>
+
+<body onclick="PlayAudio()">
+
+    <main id="main">
+        <video muted autoplay loop>
+            <source src="media/fondo.mp4"
+            type="video/mp4">
+        </video>
+        <div class="capa"></div>
+
+        <form>
+            <img class="form-img" src="media/imagen1.png"/>
+            <div>
+                <label for="email_adress">Correo electrónico</label>
+                <input type="email" id="email_adress" name="email_adress" placeholder="Correo electrónico" required>
+            </div>
+            <div>
+                <label for="booking_date">Fecha de reserva</label>
+                <input type="date" id="booking_date" name="booking_date" required>
+            </div>
+            <div>
+                <label for="people">Número de personas</label>
+                <input type="number" id="people" placeholder=" 0" min=" 1" max=" 8" name="people" required>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Acepto la política de cancelación</label>
+            </div>
+            <button type="submit">Reservar ahora</button>
+        </form>
+    </main>
+    <audio id="audio1" autoplay loop>
+        <source src="media/musica.mp3" type="audio/mp3">
+    </audio>
+        
+
+    <script>
+        function PlayAudio() {
+            document.getElementById("audio1").play();
+        }
+    </script>
+    
+</body>
+
+<footer class="footer">
+    <ul class="menu-footer">
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Inicio </a>   
+        </li>  
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Equipo </a>   
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Contacto </a>   
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Video </a>   
+        </li>
+        <li class="menu-elem">
+            <a href="" class="menu-icon"> Sobre Nosotros </a>   
+        </li>
+    </ul>
+    <p class="text"> 2024 | Todos los derechos reservados</p>
+</footer>
+</html>

@@ -1,0 +1,320 @@
+/* encabezado */
+header {
+    background-color:  rgb(39, 128, 17);
+    padding: 15px 0;
+    width: 100%;
+    
+    top: 0; 
+    z-index: 1000; 
+    display: flex;
+    align-items: center;
+}
+
+.header-img{
+    align-items: center;
+    margin-top: -20px;
+    width:80px;
+    margin-left: 5px;
+    margin-right: -45px;
+    transition:0.5;
+    margin-bottom: -20px;
+    padding-inline: 40px;
+} 
+
+
+.header-title{
+    color: white;
+    font-weight: bold;
+    font-size:20px ; 
+}
+
+
+.header-elem{
+    list-style: none;
+    position: relative;
+}
+
+.header-icon{
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    font-size:20px ;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.header-icon:hover {
+    opacity:1;
+    transform: translateY(-10px);
+}
+
+
+.header-links {
+    display: flex;
+    padding-right: 30px;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.dropdown {
+    display: none; /* Oculto por defecto */
+    background: rgb(39, 128, 17);
+    position: absolute;
+    top: 100%;
+    z-index: 999; /* Muestra el menú desplegable justo debajo de "Recetas" */
+    left: 0;
+    padding: 10px 0;
+    width: max-content;
+}
+
+
+.header-elem:hover .dropdown {
+    display: block;
+}
+
+.mini-elem {
+    position: relative;
+}
+
+.mini-elem {
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.mini-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.mini-icon:hover {
+    text-decoration: underline;
+}
+/* encabezado */
+
+
+body {
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+
+/* video de fondo */
+#main{
+    display: flex;
+    min-height: 100vh;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+
+}
+/* video de fondo */
+
+
+/* formulario */
+form {
+    margin: auto;
+    position: relative; 
+    z-index: 2;
+
+
+    background-color: rgb(39, 128, 17);
+    max-width: 550px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+    font-weight: 15px;
+}
+
+input{
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:  rgb(57, 143, 35);
+    cursor: pointer;
+    color: white;
+    height: 30px;
+    border:none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#agree{
+    width: auto;
+    margin: 0 10px 0 0;
+    margin-top: 10px;
+    height: 15px;
+    cursor: pointer;
+    
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.form-img{
+    width:300px;
+    margin-top: 10px;
+    margin-bottom: -20px;
+    padding-inline: 40px;
+    transition: transform 0.3s ease;
+}
+
+.form-img:hover{
+    transform: rotate(15deg); 
+}
+
+/* formulario */
+
+
+/* video */
+iframe{
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    margin: auto;
+    position: relative; 
+    z-index: 2;
+}
+/* video */
+
+/* recetas */
+section{
+    margin: auto;
+    position: relative; 
+    z-index: 2; 
+    width: 100%; 
+    background-color: rgb(39, 128, 17);
+    max-width: 800px;
+    border-radius: 10px;
+    padding: 35px;
+    display: flex;
+    gap: 15px;
+    margin: 45px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-img{
+    width: 350px;
+    height: 200px; 
+    object-fit: cover;
+    float :left;
+    border:3px solid #fff;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.section-title{
+    text-align: justify;
+    margin-bottom: -10px;
+    color: #960000;
+}
+.section-text{
+    text-align: justify;
+    margin-bottom: -10px;
+}
+
+/* .section-text::first-letter{
+    font-weight: bold;
+    color: #DF2E38;
+} */
+/* recetas */
+
+/* pie de pagina */
+footer{
+    width: 100%;
+    background: #0F5007;
+    min-height: 100px;
+    padding: 15px 0;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.menu-elem{
+    list-style: none;
+}
+
+.menu-icon{
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+.menu-icon:hover{
+    opacity:1;
+    transform: translateY(-10px);
+}
+
+.text{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.text:hover{
+    opacity: 0.2;
+}
+/* pie de pagina */
