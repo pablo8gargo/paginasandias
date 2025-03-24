@@ -21,7 +21,6 @@ header {
     padding-inline: 40px;
 } 
 
-
 .header-title{
     color: white;
     font-weight: bold;
@@ -58,16 +57,15 @@ header {
 }
 
 .dropdown {
-    display: none; /* Oculto por defecto */
+    display: none;
     background: rgb(39, 128, 17);
     position: absolute;
     top: 100%;
-    z-index: 999; /* Muestra el menú desplegable justo debajo de "Recetas" */
+    z-index: 999;
     left: 0;
     padding: 10px 0;
     width: max-content;
 }
-
 
 .header-elem:hover .dropdown {
     display: block;
@@ -92,7 +90,6 @@ header {
     text-decoration: underline;
 }
 /* encabezado */
-
 
 body {
     height: auto;
@@ -135,7 +132,6 @@ video{
 
 }
 /* video de fondo */
-
 
 /* formulario */
 form {
@@ -205,9 +201,7 @@ button{
 .form-img:hover{
     transform: rotate(15deg); 
 }
-
 /* formulario */
-
 
 /* video */
 iframe{
@@ -235,11 +229,6 @@ section{
     margin: 45px;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    
-}
 
 .section-img{
     width: 350px;
@@ -260,11 +249,6 @@ section{
     text-align: justify;
     margin-bottom: -10px;
 }
-
-/* .section-text::first-letter{
-    font-weight: bold;
-    color: #DF2E38;
-} */
 /* recetas */
 
 /* pie de pagina */

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booking form</title>
+    <title>Inicio</title>
     <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/spring-144/64/Watermelon-256.png"/>
     <link rel="stylesheet" href="assets/css/estilos.css" />
 </head>
@@ -36,48 +36,70 @@
     
 </header>
 
-
 <body onclick="PlayAudio()">
-
-    <main class="main" id="main">
+    <main class="main "id="main">
         <video muted autoplay loop>
             <source src="assets/images/fondo.mp4"
             type="video/mp4">
         </video>
         <div class="capa"></div>
+
+        <div class="menu-inicio">
+            <section class="intro">
+                <h1>¡Bienvenidos!</h1>
+                <p>Sumérgete en nuestra pasión por la sandía con recetas frescas, ideas creativas y experiencias únicas. Desde tartas exóticas hasta helados refrescantes, nuestra inspiración no tiene límites. Disfruta de videos que resaltan el color y sabor de la sandía, y explora opciones para hacer de tu evento algo especial. Descubre cómo reinventamos esta fruta en cada receta y déjate llevar por la frescura y versatilidad de WatermelonEnterprise. ¡La frescura nunca fue tan emocionante!</p>
+                <img src="assets/images/intro.png" alt="">
+            </section>
         
-        <form class="principal-form">
-            <img class="form-img" src="assets/images/imagen1.png"/>
-            <div>
-                <label for="email_adress">Correo electrónico</label>
-                <input type="email" id="email_adress" name="email_adress" placeholder="Correo electrónico" required>
-            </div>
-            <div>
-                <label for="booking_date">Fecha de reserva</label>
-                <input type="date" id="booking_date" name="booking_date" required>
-            </div>
-            <div>
-                <label for="people">Número de personas</label>
-                <input type="number" id="people" placeholder=" 0" min=" 1" max=" 8" name="people" required>
-            </div>
-            <div class="checkbox-container">
-                <input type="checkbox" id="agree" name="agree" required>
-                <label for="agree">Acepto la política de cancelación</label>
-            </div>
-            <button type="submit">Reservar ahora</button>
-        </form>
+            <section class="highlight-section">
+                <h1>Explora más</h1>
+                <p>Descubre nuestros servicios y contenido exclusivo. Reserva tu evento, inspírate con nuestras recetas, o conoce más sobre nosotros.</p>
+                <div class="boxes-container">
+                    <div class="box">
+                        <h2>Haz tu reserva</h2>
+                        <img src="assets/images/reserva.png" alt="recetas">
+                        <p>¿Listo para un evento refrescante? Reserva fácilmente con nosotros !Ahora mismo!.</p>
+                        <a href="formulario.html" class="btn">Reservar ahora</a>
+                    </div>
+                    
+                    <div class="box">
+                        <h2>Mira nuestro video</h2>
+                        <img src="assets/images/youtube2.png" alt="recetas">
+                        <p>Aprende más sobre nosotros y descubre lo que hace única a WatermelonEnterprise.</p>
+                        <a href="video.html" class="btn">Ver video</a>
+                    </div>
+
+                    <div class="box">
+                        <h2>Explora nuestras recetas</h2>
+                        <img src="assets/images/recetas.png" alt="recetas">
+                        <p>Desde tartas hasta granizados, tenemos recetas perfectas para cada ocasión.</p>
+                        <a href="recetas.html" class="btn">Ver recetas</a>
+                    </div>
+            
+                    
+            </section>
+        
+            <section class="gallery">
+                <h1>Galería de Inspiración</h1>
+                <div class="gallery-images">
+                    <img src="https://www.lacocinasana.com/static/b0a03b6ec0e46f01647727b1a99c7fc3/cad01/sandiaapertura_c655d0bbef.jpg" alt="Tarta de sandía" />
+                    <img src="https://www.recetasnestle.com.do/sites/default/files/srh_recipes/a1830c3ae0ad8f1daad680c6f6d70e27.png" alt="Helado de sandía" />
+                    <img src="https://d2yoo3qu6vrk5d.cloudfront.net/pulzo-lite/images-resized/PP197R-h-o.png" alt="Granizado de sandía" />
+                    <img src="https://imagenes.20minutos.es/files/image_990_556/uploads/imagenes/2020/05/29/sandia-a-la-plancha-con-chocolate-fundido.jpeg" alt="Sandía a la plancha" />
+                </div>
+            </section>
+        </div>
     </main>
+
     <!-- <audio id="audio1" autoplay loop>
         <source src="assets/images/musica.mp3" type="audio/mp3">
     </audio> -->
-        
 
     <script>
         function PlayAudio() {
             document.getElementById("audio1").play();
         }
     </script>
-    
 </body>
 
 <footer class="footer">

@@ -1,0 +1,408 @@
+/* cuerpo y fondo */
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #87ae89;
+  justify-content: center;
+  text-align: center;
+}
+body video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+body .main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+body .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+  z-index: 0;
+}
+
+/* cuerpo y fondo */
+/* encabezado */
+header {
+  background-color: #142c1e;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+header p {
+  color: #87ae89;
+  font-weight: bold;
+  font-size: 22px;
+  overflow: hidden;
+  border-right: 2px solid rgb(134, 134, 134);
+  animation: typing 3s steps(20, end) 3s infinite alternate, blink 0.6s step-end infinite alternate;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 17.5ch;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+header ul {
+  display: flex;
+  padding-right: 30px;
+  gap: 30px;
+  margin-left: auto;
+}
+header li {
+  list-style: none;
+  position: relative;
+}
+header li:hover .dropdown {
+  display: block;
+}
+header a {
+  color: #87ae89;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.3s;
+}
+header a:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+header img {
+  margin: -20px -45px -20px 5px;
+  padding: 0 40px;
+  width: 80px;
+}
+header .dropdown {
+  background: #142c1e;
+  padding: 10px 0;
+  display: none;
+  width: max-content;
+  position: absolute;
+  z-index: 999;
+}
+header .dropdown li {
+  padding: 5px 20px;
+  list-style: none;
+}
+header .dropdown a {
+  font-size: 19px;
+}
+header .dropdown a:hover {
+  text-decoration: underline;
+  transform: translateY(0px);
+}
+
+/* encabezado */
+/* pie de pagina */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: #2f4f3c;
+  min-height: 100px;
+  padding: 15px 0;
+  position: relative;
+  flex-direction: column;
+  z-index: 2;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px;
+  flex-wrap: wrap;
+}
+footer li {
+  list-style: none;
+}
+footer a {
+  color: #87ae89;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.3s;
+  margin: 10px 10px -10px;
+  color: white;
+}
+footer a:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+footer p {
+  color: white;
+  text-align: center;
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+footer p:hover {
+  opacity: 0.2;
+}
+footer img {
+  color: #87ae89;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 22px;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.3s;
+  margin: 0px 40px -10px 0px;
+  padding: 0px;
+  width: 25px;
+}
+footer img:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+}
+
+/* pie de pagina */
+/* formulario principal */
+.principal-form {
+  position: relative;
+  align-items: center;
+  z-index: 2;
+  background-color: #142c1e;
+  max-width: 550px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #87ae89;
+}
+.principal-form img {
+  margin: 10px 0 -20px;
+  padding: 0 40px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+.principal-form img:hover {
+  transform: rotate(15deg);
+}
+.principal-form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 15px;
+}
+.principal-form input {
+  width: 80%;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+.principal-form button {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2f4f3c;
+  cursor: pointer;
+  color: #87ae89;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.principal-form #agree {
+  width: auto;
+  margin: 10px 10px 0 0;
+  height: 15px;
+  cursor: pointer;
+}
+.principal-form .checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* formulario principal*/
+/* secciones de recetas */
+.sections-recipes {
+  margin: 45px;
+  padding: 35px;
+  width: 800px;
+  position: relative;
+  z-index: 2;
+  background-color: #142c1e;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  max-width: 800px;
+}
+.sections-recipes h2 {
+  text-align: justify;
+  margin-bottom: -10px;
+  color: #4b7662;
+}
+.sections-recipes p {
+  text-align: justify;
+}
+.sections-recipes img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  float: left;
+  border: 3px solid #87ae89;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+/* secciones de recetas */
+.menu-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  font-family: sans-serif;
+}
+.menu-inicio h1 {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.menu-inicio p {
+  text-align: center;
+  margin: 0px 250px;
+  font-size: 18px;
+}
+.menu-inicio a {
+  margin: 10px;
+  opacity: 0.5;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #2f4f3c;
+}
+.menu-inicio a:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+.menu-inicio .intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+.menu-inicio .intro img {
+  width: 250px;
+}
+.menu-inicio .intro img:hover {
+  transform: scale(1.1);
+}
+.menu-inicio .highlight-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: url(https://img.freepik.com/free-vector/flat-design-forest-landscape_23-2149172159.jpg?t=st=1730695570~exp=1730699170~hmac=db974c2bcf33756f3df6bad163553e99872f210316b3ca3f077efb1a126d9b87&w=1380) no-repeat center;
+  background-attachment: fixed;
+  background-size: cover;
+  flex-direction: column;
+  height: 70vh;
+}
+.menu-inicio .highlight-section h1 {
+  color: #142c1e;
+}
+.menu-inicio .highlight-section p {
+  margin: 0px 550px;
+  font-size: 24px;
+  color: #2f4f3c;
+  font-weight: bold;
+}
+.menu-inicio .highlight-section .boxes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 30px;
+}
+.menu-inicio .highlight-section .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  border-radius: 1rem;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border: 3.5px solid rgb(255, 255, 255);
+  flex-direction: column;
+}
+.menu-inicio .highlight-section .box:hover {
+  transform: scale(1.1);
+}
+.menu-inicio .highlight-section .box img {
+  width: 50px;
+  margin: -5px 0 15px;
+}
+.menu-inicio .highlight-section .box p {
+  font-size: 18px;
+  margin: 0px 15px;
+}
+.menu-inicio .highlight-section .box h2 {
+  font-size: 25px;
+  color: #142c1e;
+}
+.menu-inicio .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  flex-direction: column;
+  height: 70vh;
+}
+.menu-inicio .gallery img {
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #87ae89;
+  border-radius: 10px;
+  margin: 0 50px 0 50px;
+}
+.menu-inicio .gallery img:hover {
+  transform: scale(1.1);
+}
+
+/* video */
+iframe {
+  position: relative;
+  border-radius: 15px;
+}
+
+/* video */
+
+/*# sourceMappingURL=estilos.css.map */
